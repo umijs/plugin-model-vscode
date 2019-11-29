@@ -1,0 +1,44 @@
+{
+  "name": "umijs-plugin-model",
+  "displayName": "@umijs/plugin-model",
+  "description": "code navigation for umi models",
+  "version": "0.0.2",
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "publisher": "litiany4",
+  "categories": [
+    "Other"
+	],
+	"repository": "https://github.com/umijs/plugin-model-vscode.git",
+  "activationEvents": [
+    "workspaceContains:package.json"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": []
+  },
+  "scripts": {
+    "vscode:prepublish": "webpack --mode production",
+    "webpack": "webpack --mode development",
+    "webpack-dev": "webpack --mode development --watch",
+    "pretest": "npm run compile",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.1",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.11.7",
+    "@types/vscode": "^1.0.0",
+    "mocha": "^6.2.2",
+    "ts-loader": "^6.2.1",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.4",
+    "vscode-test": "^1.2.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "glob": "^7.1.6"
+  }
+}
