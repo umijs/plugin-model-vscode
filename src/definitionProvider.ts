@@ -63,8 +63,8 @@ export class ModelProvider implements vscode.DefinitionProvider {
 
     const keyStr = `import ${importName} from`;
     const importPathStart = ProviderFile.indexOf(keyStr) + keyStr.length;
-    const importPathEnd = ProviderFile.indexOf(`'`, importPathStart);
-    const uriRaw = ProviderFile.slice(importPathStart, importPathEnd).trim();
+    const importPathEnd = ProviderFile.indexOf(`import`, importPathStart);
+    const uriRaw = ProviderFile.slice(importPathStart, importPathEnd + 1).trim();
     const end = uriRaw.lastIndexOf('\"') === -1 ? uriRaw.lastIndexOf('\'') : uriRaw.lastIndexOf('\"');
     const uri = uriRaw.slice(1, end);
 
