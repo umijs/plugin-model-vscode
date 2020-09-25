@@ -1,16 +1,16 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-		"moduleResolution": "node",
-		"target": "es2019",
-    "outDir": "out",
-    "lib": ["es6"],
-    "sourceMap": true,
-    "rootDir": "src",
-    "strict": true,
-    "noImplicitAny": false,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true
+  "module": "commonjs",
+  "moduleResolution": "node",
+  "target": "es2019",
+  "outDir": "out",
+  "lib": ["es6"],
+  "sourceMap": true,
+  "rootDir": "src",
+  "strict": true,
+  "noImplicitAny": false,
+  "emitDecoratorMetadata": true,
+  "experimentalDecorators": true
   },
   "exclude": [".vscode-test", "**/fixtures/**"]
 }
